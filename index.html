@@ -8,6 +8,13 @@
             processEscapes: true
           }
         });
+
+        window.MathJax = {
+          tex: {
+            tags: 'ams'
+          }
+        };
+
       </script>
       
       <script type="text/javascript"
@@ -80,7 +87,7 @@
                 \begin{equation}
                 \label{first}
                     \vec{P}_i=\vec{P}_f,
-                \end{equation}\tag{1}
+                \end{equation}
                 ​
                 where $$\vec{P}_i=m_i\vec{v}_i$$ (the initial momentum, given by the initial mass and initial speed), and $\vec{P}_f=m_i\vec{v}_f$ (the final momentum). 
                 ​
@@ -88,66 +95,66 @@
                 ​
                 \begin{equation}
                     m_iv_i\,\hat{i}=m_fv_f\,\hat{i}.
-                \end{equation}\tag{2}
+                \end{equation}
                 ​
                 Focusing on the magnitudes, this equation states that
                 ​
                 \begin{equation}
                 \label{mv}
                     m_iv_i=m_fv_f.
-                \end{equation}\tag{3}
+                \end{equation}
                 ​
                 Now, the initial mass of the system is given by the mass of the two bags, that we can call $m_{b1}$ and $m_{b2}$ (we know these), and the mass of Sophia, that we can call $m_{s}$ (we do not know this one). Thus, the total initial mass can be written as
                 ​
                 \begin{equation}
                     m_i=m_{b1}+m_{b2}+m_{s}.
-                \end{equation}\tag{4}
+                \end{equation}
                 ​
                 The final mass of the system is the same except that Sophia losses one bag:
                 ​
                 \begin{equation}
                     m_i=m_{b1}+m_{s}.
-                \end{equation}\tag{5}
+                \end{equation}
                 ​
                 Thus, equation $m_iv_i=m_fv_f$ becomes:
                 ​
                 \begin{equation}
                      \underbrace{(m_{b1}+m_{b2}+m_{s})}_{m_i}v_i= \underbrace{(m_{b1}+m_{s})}_{m_f}v_f.
-                \end{equation}\tag{6}
+                \end{equation}
                 The only variable we do not know here is $m_s$. To find it, let us expand the parentheses in both sides: 
                 ​
                 \begin{equation}
                     m_{b1}v_i+m_{b2}v_i+m_{s}v_i=m_{b1}v_f+m_s v_f.
-                \end{equation}\tag{7}
+                \end{equation}
                 Let's put all the terms with $m_s$ in the left and the rest of terms in the right 
                 ​
                 \begin{equation}
                    m_{s}v_i-m_{s}v_f=m_{b1}v_f-m_{b1}v_i-m_{b2}v_i.
-                \end{equation}\tag{8}
+                \end{equation}
                 ​
                 Let's factorize $m_s$ on the left, and use that $m_{b1}=m_{b2}$.
                 ​
                 \begin{equation}
                    m_{s}(v_i-v_f)=m_{b1}v_f-2m_{b1}v_i.
-                \end{equation}\tag{9}
+                \end{equation}
                 ​
                 Let us divide by $(v_s-v_f)$:
                 ​
                 \begin{equation}
                    m_{s}=\frac{m_{b1}v_f-2m_{b1}v_i}{(v_i-v_f)}.
-                \end{equation}\tag{10}
+                \end{equation}
                 ​
                 We can factorize $m_{b1}$:
                 ​
                 \begin{equation}
                    m_{s}=m_{b1}\frac{(v_f-2v_i)}{(v_i-v_f)}.
-                \end{equation}\tag{11}
+                \end{equation}
                 ​
                 We can now insert the numerical values for the different variables:
                 ​
                 \begin{equation}
                    m_{s}=\frac{\overbrace{(1\, \text{kg})}^{m_{b1}}(\overbrace{10.2 \,\text{m}/\text{s}}^{v_f}-2\times\overbrace{9.8 \,\text{m}/\text{s}}^{v_i})}{\underbrace{(9.8 \,\text{m}/\text{s})}_{v_i}-\underbrace{(10.2 \,\text{m}/\text{s})}_{v_f}}=38.8 \,\text{kg}
-                \end{equation}\tag{12}
+                \end{equation}
                 ​</div>
       </div>
 
