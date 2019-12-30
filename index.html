@@ -72,7 +72,7 @@
 
     <main role="main" class="container">
         <figure class="figure">
-            <img src="MovingTV.svg" class="img" alt="A generic square placeholder image with rounded corners in a figure.">
+            <img src="MovingTruckPrompt.svg" class="img" alt="A generic square placeholder image with rounded corners in a figure.">
             <figcaption class="figure-caption">An image from a random physics problem.</figcaption>
           </figure>
         <h1>Problem #1</h1>
@@ -80,151 +80,100 @@
         <div id="myContent" class='hidden'>
             <div>
             
-A family is going on vacations to a natural park. The luggage on the top of the car, which has a total mass of $150\,\text{kg}$, can slide and fall, since they forgot to secure it with ropes. The coefficient of static friction between the luggage and the top of the car is $0.6$. At some point, the car is going on a hill of slope $20^\circ$, as indicated in the figure below.  
-
-\begin{enumerate}
-    \item [(a)] If the car goes up with constant speed, will the luggage fall?
-    \item [(b)] What is the maximum uphill acceleration the car can have before the luggage slides?
-    \item [(c)] With what maximum acceleration the car could stop without letting the luggage slide?
-\end{enumerate}{}
+                A box of $4$ kilograms initially at rest starts to slide over the ramp of a truck. After $2$ seconds, the box is moving with a $0.2 \, \text{m}/\text{s}$ speed. The angle between the ramp and the floor is $30^\circ$.  What is the coefficient of dynamic friction between the ramp and the block?
 
 
-\section{Solution}
-
-(a) If the car is not accelerating, then we can treat the luggage as if it was placed over a regular inclined plane that is at rest (with no acceleration). In that case, we need to figure out if the static force of friction that the upper surface of the car exerts over the luggage is strong enough to prevent the luggage from sliding. 
-
-As with all problems with forces, let us start by making a force diagram, using a system of coordinates where the X axis is aligned with the slope of the hill (so that the car and the luggage only move along the X axis). 
-
-COORDINATE SYSTEM
-
-Notice that over the luggage there are two forces in the X direction, the X-component of the weight which goes in the negative X direction and the static friction, which points in the positive X direction (this force is what keeps the luggage from sliding). In Y, there are two forces, the Y-component of the weight, and the normal force. Thus, the force diagram is the following one:
-
-FORCE DIAGRAM
-
-Now, to determine if the luggage falls, we can simply write Newton's second law along the X axis:
-\begin{equation}
-    f_r \, \hat{\textbf{\i}} - W_x \, \hat{\textbf{\i}} = m a_x \, \hat{\textbf{\i}},    \label{CarroMaleta_sumatoriaFuerzasX}
-\end{equation}
-where $f_r$ is the static friction exerted by the top of the car and $W_x$ is the X-component of the weight, which is given by $W \sin \theta$, as we can see from the diagram (and recall that $W=mg$). Since the condition is that the luggage does not slide, and since the car has no acceleration, we can set $a_x=0$ (no acceleration). Thus, we get
-
-\begin{equation}
-    f_r \, \hat{\textbf{\i}}- \underbrace{(mg \sin \theta)}_{W_x} \, \hat{\textbf{\i}}= 0 \, \hat{\textbf{\i}}.
-    \label{CarroMaleta_friccionPeso1}
-\end{equation}
-
-If we focus on the magnitudes only, and move the weight term to the other side, we get
-
-\begin{equation}
-    f_r= \underbrace{(mg \sin \theta)}_{W_x}.
-    \label{CarroMaleta_friccionPeso}
-\end{equation}
 
 
-Now, since we have the mass, this equation allows us to determine what the magnitude of the friction must be so that the luggage does not slide. The question, then, is whether the car's top can exert a force of friction of that magnitude. How do we determine this? Well, we know that the maximum force of friction that the top of the car can exert is given by $\mu N$, so we can compute this maximum force and then see if it is greater than the force required according to equation \eqref{CarroMaleta_friccionPeso}. That is, we want to see if 
-\begin{equation}
-    f_{r\; max} = \mu N
-    \label{CarroMaleta_friccionNormal}
-\end{equation}
-
-is greater than the force given by equation \eqref{CarroMaleta_friccionPeso}.
-
-In order to use this equation, we need $N$, and to find $N$ we need the force equations along Y:
-\begin{equation}
-    N \, \hat{\textbf{\j}}- W_y \, \hat{\textbf{\j}}= m a_y \, \hat{\textbf{\j}}.
-\end{equation}
-
-But in Y the luggage has no acceleration, and from the force diagram we can see that $W_y = mg \cos \theta$. Thus, from this equation we get 
-\begin{equation}
-    N= \underbrace{(mg \cos \theta)}_{W_y}.
-    \label{CarroMaleta_normal}
-\end{equation}
-
-
-We can then use this in equation \eqref{CarroMaleta_friccionNormal}:
-
-\begin{equation}
-    f_{r\; max} = \mu \underbrace{(mg \cos \theta)}_{N}.
-\end{equation}
-
-Let's insert the numerical values here and in equation \eqref{CarroMaleta_friccionPeso}. We get
-\begin{equation}
-    f_r = 502.8 \, \text{N},
-\end{equation}
-and
-\begin{equation}
-    f_{r \; max} = 828.8 \, \text{N}.
-\end{equation}
-
-Thus, we see that the force of friction that is required to keep the luggage in place is lesser than the maximum force that the top of the car can exert, and so we infer that the luggage will not slide.
-
-As a side-note, notice that we could have solved this problem by finding the critical angle, which is the angle after which an object will start sliding. This angle is given by $\arctan (\mu_s)$. This angle is clearly greater than the angle of the slope, and so this is another way of figuring out that the luggage does not slide.
-
-(b) Here, the reasoning is very similar to the previous case. The maximum acceleration that the car can have uphill before the luggage starts sliding can be found by figuring out what the maximum acceleration the top of the car can exert on the luggage (if the car has an acceleration greater than this acceleration, then the luggage will start sliding). And the maximum acceleration that the top of the car can exert on the luggage is given by the maximum force of static friction that the top can exert, which is given by equation \eqref{CarroMaleta_friccionNormal} above.
-
-So, from (a), we know that the maximum force of static friction that the top of the car can exert is:
-\begin{equation}
-    f_{r\; max} =mg \cos \theta.
-\end{equation}
-Let's then use equation \eqref{CarroMaleta_sumatoriaFuerzasX} again, but now we will not set $a_x=0$ because we want the luggage to accelerate together with the car. If we use that $W_x=m g \sin \theta$ and that $f_r$ is the maximum force of friction, then the equation \eqref{CarroMaleta_sumatoriaFuerzasX} becomes:
-\begin{equation}
-    \underbrace{(\mu mg \cos \theta)}_{f_r}  - \underbrace{(mg \sin \theta)}_{W_x}  = m a_x.    \label{CarroMaleta_aceleracionFuerzas}
-\end{equation}
-Dividing by $m$:
-\begin{equation}
-    \mu g \cos \theta  - g \sin \theta  =  a_x.
-    \label{CarroMaleta_aceleracion}
-\end{equation}
-Finally, let's insert the numerical values:
-\begin{equation}
-    \underbrace{(0.6)}_{\mu} \underbrace{(9.8 \; \text{m/s}^2)}_{g} \cos \underbrace{(20^\circ)}_{\theta}  -  \underbrace{(9.8 \; \text{m/s}^2)}_{g} \sin \underbrace{(20^\circ)}_{\theta}  = a_x,    \label{CarroMaleta_reemplazando}
-\end{equation}
-to get:
-\begin{equation}
-    a_x = 2.17 \; \text{m/s}^2.
-\end{equation}
-
-
-This is then the maximum acceleration that the top of the car can give the luggage, and so the maximum acceleration that the car can have when going uphill without making the luggage slide.
-
-(c) If the car stops, then the luggage will tend to slide towards the front for it will tend to keep its state of motion (Newton's first law). The greater the magnitude of the acceleration the car has when stopping, the easier would be for the luggage to slide towards the front. The reasoning is similar to case (b), except that now the acceleration in question is negative and not positive because the velocity is decreasing (and so $(v_f \, \hat{\textbf{\i}} - v_i \, \hat{\textbf{\i}})$ is negative). 
-
-Since the acceleration is negative, the direction of some of the forces is different as well. In particular, the force of static friction that the top of the car exerts over the luggage goes along the negative X-axis for this force is trying to decrease the luggage's velocity as the car stops (in case (a), this force was positive because it was helping the luggage increase its speed while the car accelerates).  Thus, the force diagram for the luggage in this case is the following one:
-
-FORCE DIAGRAM
-
-We are interested in finding the maximum breaking acceleration that the static friction of the top of the car can give to the luggage. If the car were to have an even greater breaking acceleration than this one, then the luggage would slide. 
-
-In order to write the equation of forces along X, we need to note that the static friction has now a negative sign because the force is helping the luggage stop, and the acceleration also has a negative sign because it the velocity is decreasing. Thus, we get
-\begin{equation}
-    -W_x \, \hat{\textbf{\i}}-f_{r_e} \, \hat{\textbf{\i}} = - ma_x \, \hat{\textbf{\i}}
-\end{equation}
-
-
-As before, we know that $W_x= mg \sin \theta$. 
-
-\begin{equation}
-    -\underbrace{(mg \sin \theta)}_{W_x} \, \hat{\textbf{\i}}-f_{r_e} \, \hat{\textbf{\i}} = - ma_x \, \hat{\textbf{\i}}
-\end{equation}
-
-The maximum breaking acceleration for the luggage is given by the maximum static friction (for the static friction is the only force that can help the luggage stop). The magnitude of the maximum static friction is always $f_{r \; max}= \mu_e N$.
-
-We already know $\mu_e N$ from points (a) and (b), so we can simply plug that result in the equation of forces along X. 
-\begin{equation}
-    -mg \sin \theta - \underbrace{(\mu_e m g \cos \theta) }_{f_{r_e}}=-ma_x, 
-\end{equation}
-and dividing by $-m$:
-\begin{equation}
-    g \sin \theta + \mu_e g \cos \theta = a_x,
-\end{equation}
-
-Finally, we insert the numerical values: 
-\begin{equation}
-    \underbrace{(9.8 \; \text{m/s}^2)}_{g} \sin \underbrace{(20^\circ)}_{\theta} + \underbrace{(0.6)}_{\mu_e} \underbrace{(9.8 \; \text{m/s}^2)}_{g} \cos \underbrace{(20^\circ)}_{\theta}     = a_x,    \label{CarroMaleta_reemplazandoC}
-\end{equation}
-to get:
-\begin{equation}
-    a_x = 8.88 \; \text{m/s}^2.
-\end{equation}
+                \section{Solution}
+                
+                In order to determine the coefficient of dynamic friction, we need to find a relation between that coefficient and the other variables we know. Notice that the coefficient of friction partially determines the force of friction, and the force of friction plays a role in the acceleration of the block along the inclined plane (we can easily find this acceleration because we know the initial and final speeds after two seconds). Thus, in order to find a relation between the coefficient of dynamic friction and the acceleration, we need to consider Newton's Second Law.
+                
+                As it is usual for problems with inclined planes, we will use a system of coordinates where the X axis points in the direction of the ramp, and where the Y axis is perpendicular to the ramp, as illustrated here (this kind of system has the benefit that most of the forces and the acceleration are aligned with the axes, and so we do not need to find their components):
+                
+                FIGURE SYSTEM OF COORDINATES
+                
+                Next, we make a force diagram. There are two forces along the Y axis. One is the normal force, that points in the positive Y direction, and the other one is the Y-component of the weight. Along the X axis, we have two forces, the force of friction that opposes the motion of the box (and so points in the negative X direction) and the X-component of the weight, that points in the positive X direction. Thus, the force diagram is the following one: 
+                
+                <figure class="figure">
+                    <img src="MovingTruckSolution.svg" class="img" alt="A generic square placeholder image with rounded corners in a figure.">
+                    <figcaption class="figure-caption">An image from a random physics problem.</figcaption>
+                  </figure>
+                
+                We now write Newton's Second Law in the X-axis. As it is clear from the force diagram, there are two forces in X, the X-component of the weight (positive in X) and the friction (negative in X), and so we get
+                \begin{equation}
+                    W_x \, \hat{\textbf{\i}} - f_r \, \hat{\textbf{\i}} = m a_x \, \hat{\textbf{\i}},
+                    \label{CajaFriccion_fuerzasX}
+                \end{equation}
+                where $a_x \, \hat{\textbf{\i}}$ is the acceleration of the box, whose direction is along the positive X axis. We have enough information to find this acceleration, for we know the change of speed after 2 seconds. However, let's find its value a bit later. 
+                
+                One can see from the force diagram that $W_x$ is given by $W \sin \theta$ (recall that $W=mg$). And we also know that the magnitude of the dynamic force of friction is given by $\mu N$, where $N$ is the magnitude of the normal force and $\mu$ is the coefficient of dynamic friction that we know. Thus, equation \eqref{CajaFriccion_fuerzasX} becomes
+                \begin{equation}
+                    \underbrace{(mg \sin \theta)}_{W_x}\, \hat{\textbf{\i}} - \underbrace{(\mu N)}_{f_r} \, \hat{\textbf{\i}}= m a_x \, \hat{\textbf{\i}}.
+                    \label{CajaFriccion_fuerzasXReemplazando}
+                \end{equation}
+                
+                Since the acceleration in X is constant, it is given by 
+                \begin{equation}
+                    \frac{(v_{f} \, \hat{\textbf{\i}} - v_i \, \hat{\textbf{\i}})}{t} = a_x \, \hat{\textbf{\i}},
+                \end{equation}
+                where $v_f$ is the final speed after time $t$ and $v_i$ is the initial speed. Since $v_i$ is zero because the box starts from rest, we get
+                \begin{equation}
+                    \frac{v_f}{t} \, \hat{\textbf{\i}}= a_x \, \hat{\textbf{\i}}.
+                \end{equation}
+                
+                Let's then use this in equation \eqref{CajaFriccion_fuerzasXReemplazando}:
+                \begin{equation}
+                    mg \sin \theta \, \hat{\textbf{\i}} - \mu N \, \hat{\textbf{\i}}= m   \underbrace{\frac{v_f}{t}}_{a_x} \, \hat{\textbf{\i}}.
+                    \label{CajaFriccion_fuerzasXConAceleracion}
+                \end{equation}
+                
+                
+                Now, from this equation we cannot yet find $\mu$ because we do not know $N$ (but we know $t$, $v_f$, $m$ and $\theta$). Thus, we need to write the force equation along the Y axis. 
+                
+                In the Y axis, the block is at rest (it only moves along X). Also, the normal force is positive and the Y-component of the weight is negative. Thus, Newton's Second Law along the Y axis is
+                \begin{equation}
+                   N \, \hat{\textbf{\j}} - W_y \, \hat{\textbf{\j}} = 0 \, \hat{\textbf{\j}}.
+                   \label{CajaFriccion_FuerzasY}
+                \end{equation}
+                
+                
+                But from the force diagram, we can see that $W_y$ is given by $mg \cos \theta$ ($W=mg$). So, equation \eqref{CajaFriccion_FuerzasY} becomes
+                \begin{equation}
+                    N \, \hat{\textbf{\j}} - \underbrace{(mg \cos \theta)}_{W_y} \, \hat{\textbf{\j}} = 0 \, \hat{\textbf{\j}}.
+                \end{equation}
+                
+                If we move $mg \cos \theta$ to the other side, and if we focus only on the magnitudes,  we find that \begin{equation}
+                    N = mg \cos \theta.
+                    \label{CajaFriccion_Normal}
+                \end{equation}
+                
+                Let us use this result in equation \eqref{CajaFriccion_fuerzasXConAceleracion}. We get
+                \begin{equation}
+                    mg \sin \theta \, \hat{\textbf{\i}} - \mu \underbrace{(mg \cos \theta )}_{N}\, \hat{\textbf{\i}} = m \frac{v_f}{t} \, \hat{\textbf{\i}}.
+                \end{equation}
+                
+                The only unknown variable here is $\mu$. Thus, let us leave the term with $\mu$ in the left and move the other terms to the right:
+                
+                \begin{equation}
+                    - \mu mg \cos \theta \, \hat{\textbf{\i}}=  m \frac{v_f}{t} \, \hat{\textbf{\i}}- mg \sin \theta \, \hat{\textbf{\i}}.
+                \end{equation}
+                
+                Now, let us focus on the magnitudes and divide everything by $-m g \cos \theta$;
+                
+                \begin{equation}
+                    \mu =  - \frac{v_f}{t g \cos \theta} + \tan \theta,
+                \end{equation}
+                where the mass cancels everywhere and where we used that $\sin \theta / \cos \theta= \tan \theta$.
+                
+                Finally, let us replace the values of all the terms:
+                \begin{equation}
+                    \mu =  - \frac{\overbrace{(0.2\; \text{m/s})}^{v_f}}{\underbrace{(2\; \text{s})}_{t} \underbrace{(9.8\; \text{m/s}^2)}_{g} \cos \underbrace{(30^\circ)}_{\theta}} + \tan \overbrace{(30^\circ)}^{\theta},
+                \end{equation}
+                to get
+                \begin{equation}
+                    \mu = 0.56.
+                \end{equation}
                 ​</div>
       </div>
 
