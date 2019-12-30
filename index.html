@@ -79,86 +79,152 @@
         <a href="#" onclick="toggler('myContent');" class="btn btn-info" role="button">Stuck? Show Solution</a>
         <div id="myContent" class='hidden'>
             <div>
-              
-                Using the mass of the two bags, as well as Sophia's initial and final speed, we are asked to find Sophia's mass. In order to do this, we will have to use the conservation of linear momentum.
-                ​
-                The linear momentum of a system is conserved in the absence of external forces. In this case, the system consists of Sophia and her two bags (we are told to ignore the skateboard's mass).  Notice that in the direction of motion, there are no external forces over the system. Hence, the momentum along the direction of motion is conserved;
-                ​
-                \begin{equation}
-                \label{first}
-                    \vec{P}_i=\vec{P}_f,
-                    \tag{1}
-                \end{equation}
-                ​
-                where $$\vec{P}_i=m_i\vec{v}_i$$ (the initial momentum, given by the initial mass and initial speed), and $\vec{P}_f=m_i\vec{v}_f$ (the final momentum). 
-                ​
-                Suppose that we take the direction of motion to be the positive X-axis. In that case, $\vec{P}_i=m_iv_i\,\hat{i}$ and $\vec{P}_f=m_fv_f\,\hat{i}$ so that equation  $\vec{P}_i=\vec{P}_f$ becomes:
-                ​
-                \begin{equation}
-                    m_iv_i\,\hat{i}=m_fv_f\,\hat{i}.
-                \end{equation}
-                ​
-                Focusing on the magnitudes, this equation states that
-                ​
-                \begin{equation}
-                \label{mv}
-                    m_iv_i=m_fv_f.
-                \end{equation}
-                
+            
+A family is going on vacations to a natural park. The luggage on the top of the car, which has a total mass of $150\,\text{kg}$, can slide and fall, since they forgot to secure it with ropes. The coefficient of static friction between the luggage and the top of the car is $0.6$. At some point, the car is going on a hill of slope $20^\circ$, as indicated in the figure below.  
 
-                \begin{equation}
-                \end{equation}
-                Now, the initial mass of the system is given by the mass of the two bags, that we can call $m_{b1}$ and $m_{b2}$ (we know these), and the mass of Sophia, that we can call $m_{s}$ (we do not know this one). Thus, the total initial mass can be written as
-                ​
-                \begin{equation}
-                    m_i=m_{b1}+m_{b2}+m_{s}.
-                \end{equation}
-                ​
-                The final mass of the system is the same except that Sophia losses one bag:
-                ​
-                \begin{equation}
-                    m_i=m_{b1}+m_{s}.
-                \end{equation}
-                ​
-                Thus, equation $m_iv_i=m_fv_f$ becomes:
-                ​
-                \begin{equation}
-                     \underbrace{(m_{b1}+m_{b2}+m_{s})}_{m_i}v_i= \underbrace{(m_{b1}+m_{s})}_{m_f}v_f.
-                \end{equation}
-                The only variable we do not know here is $m_s$. To find it, let us expand the parentheses in both sides: 
-                ​
-                \begin{equation}
-                    m_{b1}v_i+m_{b2}v_i+m_{s}v_i=m_{b1}v_f+m_s v_f.
-                \end{equation}
-                Let's put all the terms with $m_s$ in the left and the rest of terms in the right 
-                ​
-                \begin{equation}
-                   m_{s}v_i-m_{s}v_f=m_{b1}v_f-m_{b1}v_i-m_{b2}v_i.
-                \end{equation}
-                ​
-                Let's factorize $m_s$ on the left, and use that $m_{b1}=m_{b2}$.
-                ​
-                \begin{equation}
-                   m_{s}(v_i-v_f)=m_{b1}v_f-2m_{b1}v_i.
-                \end{equation}
-                ​
-                Let us divide by $(v_s-v_f)$:
-                ​
-                \begin{equation}
-                   m_{s}=\frac{m_{b1}v_f-2m_{b1}v_i}{(v_i-v_f)}.
-                \end{equation}
-                ​
-                We can factorize $m_{b1}$:
-                ​
-                \begin{equation}
-                   m_{s}=m_{b1}\frac{(v_f-2v_i)}{(v_i-v_f)}.
-                \end{equation}
-                ​
-                We can now insert the numerical values for the different variables:
-                ​
-                \begin{equation}
-                   m_{s}=\frac{\overbrace{(1\, \text{kg})}^{m_{b1}}(\overbrace{10.2 \,\text{m}/\text{s}}^{v_f}-2\times\overbrace{9.8 \,\text{m}/\text{s}}^{v_i})}{\underbrace{(9.8 \,\text{m}/\text{s})}_{v_i}-\underbrace{(10.2 \,\text{m}/\text{s})}_{v_f}}=38.8 \,\text{kg}
-                \end{equation}
+\begin{enumerate}
+    \item [(a)] If the car goes up with constant speed, will the luggage fall?
+    \item [(b)] What is the maximum uphill acceleration the car can have before the luggage slides?
+    \item [(c)] With what maximum acceleration the car could stop without letting the luggage slide?
+\end{enumerate}{}
+
+
+\section{Solution}
+
+(a) If the car is not accelerating, then we can treat the luggage as if it was placed over a regular inclined plane that is at rest (with no acceleration). In that case, we need to figure out if the static force of friction that the upper surface of the car exerts over the luggage is strong enough to prevent the luggage from sliding. 
+
+As with all problems with forces, let us start by making a force diagram, using a system of coordinates where the X axis is aligned with the slope of the hill (so that the car and the luggage only move along the X axis). 
+
+COORDINATE SYSTEM
+
+Notice that over the luggage there are two forces in the X direction, the X-component of the weight which goes in the negative X direction and the static friction, which points in the positive X direction (this force is what keeps the luggage from sliding). In Y, there are two forces, the Y-component of the weight, and the normal force. Thus, the force diagram is the following one:
+
+FORCE DIAGRAM
+
+Now, to determine if the luggage falls, we can simply write Newton's second law along the X axis:
+\begin{equation}
+    f_r \, \hat{\textbf{\i}} - W_x \, \hat{\textbf{\i}} = m a_x \, \hat{\textbf{\i}},    \label{CarroMaleta_sumatoriaFuerzasX}
+\end{equation}
+where $f_r$ is the static friction exerted by the top of the car and $W_x$ is the X-component of the weight, which is given by $W \sin \theta$, as we can see from the diagram (and recall that $W=mg$). Since the condition is that the luggage does not slide, and since the car has no acceleration, we can set $a_x=0$ (no acceleration). Thus, we get
+
+\begin{equation}
+    f_r \, \hat{\textbf{\i}}- \underbrace{(mg \sin \theta)}_{W_x} \, \hat{\textbf{\i}}= 0 \, \hat{\textbf{\i}}.
+    \label{CarroMaleta_friccionPeso1}
+\end{equation}
+
+If we focus on the magnitudes only, and move the weight term to the other side, we get
+
+\begin{equation}
+    f_r= \underbrace{(mg \sin \theta)}_{W_x}.
+    \label{CarroMaleta_friccionPeso}
+\end{equation}
+
+
+Now, since we have the mass, this equation allows us to determine what the magnitude of the friction must be so that the luggage does not slide. The question, then, is whether the car's top can exert a force of friction of that magnitude. How do we determine this? Well, we know that the maximum force of friction that the top of the car can exert is given by $\mu N$, so we can compute this maximum force and then see if it is greater than the force required according to equation \eqref{CarroMaleta_friccionPeso}. That is, we want to see if 
+\begin{equation}
+    f_{r\; max} = \mu N
+    \label{CarroMaleta_friccionNormal}
+\end{equation}
+
+is greater than the force given by equation \eqref{CarroMaleta_friccionPeso}.
+
+In order to use this equation, we need $N$, and to find $N$ we need the force equations along Y:
+\begin{equation}
+    N \, \hat{\textbf{\j}}- W_y \, \hat{\textbf{\j}}= m a_y \, \hat{\textbf{\j}}.
+\end{equation}
+
+But in Y the luggage has no acceleration, and from the force diagram we can see that $W_y = mg \cos \theta$. Thus, from this equation we get 
+\begin{equation}
+    N= \underbrace{(mg \cos \theta)}_{W_y}.
+    \label{CarroMaleta_normal}
+\end{equation}
+
+
+We can then use this in equation \eqref{CarroMaleta_friccionNormal}:
+
+\begin{equation}
+    f_{r\; max} = \mu \underbrace{(mg \cos \theta)}_{N}.
+\end{equation}
+
+Let's insert the numerical values here and in equation \eqref{CarroMaleta_friccionPeso}. We get
+\begin{equation}
+    f_r = 502.8 \, \text{N},
+\end{equation}
+and
+\begin{equation}
+    f_{r \; max} = 828.8 \, \text{N}.
+\end{equation}
+
+Thus, we see that the force of friction that is required to keep the luggage in place is lesser than the maximum force that the top of the car can exert, and so we infer that the luggage will not slide.
+
+As a side-note, notice that we could have solved this problem by finding the critical angle, which is the angle after which an object will start sliding. This angle is given by $\arctan (\mu_s)$. This angle is clearly greater than the angle of the slope, and so this is another way of figuring out that the luggage does not slide.
+
+(b) Here, the reasoning is very similar to the previous case. The maximum acceleration that the car can have uphill before the luggage starts sliding can be found by figuring out what the maximum acceleration the top of the car can exert on the luggage (if the car has an acceleration greater than this acceleration, then the luggage will start sliding). And the maximum acceleration that the top of the car can exert on the luggage is given by the maximum force of static friction that the top can exert, which is given by equation \eqref{CarroMaleta_friccionNormal} above.
+
+So, from (a), we know that the maximum force of static friction that the top of the car can exert is:
+\begin{equation}
+    f_{r\; max} =mg \cos \theta.
+\end{equation}
+Let's then use equation \eqref{CarroMaleta_sumatoriaFuerzasX} again, but now we will not set $a_x=0$ because we want the luggage to accelerate together with the car. If we use that $W_x=m g \sin \theta$ and that $f_r$ is the maximum force of friction, then the equation \eqref{CarroMaleta_sumatoriaFuerzasX} becomes:
+\begin{equation}
+    \underbrace{(\mu mg \cos \theta)}_{f_r}  - \underbrace{(mg \sin \theta)}_{W_x}  = m a_x.    \label{CarroMaleta_aceleracionFuerzas}
+\end{equation}
+Dividing by $m$:
+\begin{equation}
+    \mu g \cos \theta  - g \sin \theta  =  a_x.
+    \label{CarroMaleta_aceleracion}
+\end{equation}
+Finally, let's insert the numerical values:
+\begin{equation}
+    \underbrace{(0.6)}_{\mu} \underbrace{(9.8 \; \text{m/s}^2)}_{g} \cos \underbrace{(20^\circ)}_{\theta}  -  \underbrace{(9.8 \; \text{m/s}^2)}_{g} \sin \underbrace{(20^\circ)}_{\theta}  = a_x,    \label{CarroMaleta_reemplazando}
+\end{equation}
+to get:
+\begin{equation}
+    a_x = 2.17 \; \text{m/s}^2.
+\end{equation}
+
+
+This is then the maximum acceleration that the top of the car can give the luggage, and so the maximum acceleration that the car can have when going uphill without making the luggage slide.
+
+(c) If the car stops, then the luggage will tend to slide towards the front for it will tend to keep its state of motion (Newton's first law). The greater the magnitude of the acceleration the car has when stopping, the easier would be for the luggage to slide towards the front. The reasoning is similar to case (b), except that now the acceleration in question is negative and not positive because the velocity is decreasing (and so $(v_f \, \hat{\textbf{\i}} - v_i \, \hat{\textbf{\i}})$ is negative). 
+
+Since the acceleration is negative, the direction of some of the forces is different as well. In particular, the force of static friction that the top of the car exerts over the luggage goes along the negative X-axis for this force is trying to decrease the luggage's velocity as the car stops (in case (a), this force was positive because it was helping the luggage increase its speed while the car accelerates).  Thus, the force diagram for the luggage in this case is the following one:
+
+FORCE DIAGRAM
+
+We are interested in finding the maximum breaking acceleration that the static friction of the top of the car can give to the luggage. If the car were to have an even greater breaking acceleration than this one, then the luggage would slide. 
+
+In order to write the equation of forces along X, we need to note that the static friction has now a negative sign because the force is helping the luggage stop, and the acceleration also has a negative sign because it the velocity is decreasing. Thus, we get
+\begin{equation}
+    -W_x \, \hat{\textbf{\i}}-f_{r_e} \, \hat{\textbf{\i}} = - ma_x \, \hat{\textbf{\i}}
+\end{equation}
+
+
+As before, we know that $W_x= mg \sin \theta$. 
+
+\begin{equation}
+    -\underbrace{(mg \sin \theta)}_{W_x} \, \hat{\textbf{\i}}-f_{r_e} \, \hat{\textbf{\i}} = - ma_x \, \hat{\textbf{\i}}
+\end{equation}
+
+The maximum breaking acceleration for the luggage is given by the maximum static friction (for the static friction is the only force that can help the luggage stop). The magnitude of the maximum static friction is always $f_{r \; max}= \mu_e N$.
+
+We already know $\mu_e N$ from points (a) and (b), so we can simply plug that result in the equation of forces along X. 
+\begin{equation}
+    -mg \sin \theta - \underbrace{(\mu_e m g \cos \theta) }_{f_{r_e}}=-ma_x, 
+\end{equation}
+and dividing by $-m$:
+\begin{equation}
+    g \sin \theta + \mu_e g \cos \theta = a_x,
+\end{equation}
+
+Finally, we insert the numerical values: 
+\begin{equation}
+    \underbrace{(9.8 \; \text{m/s}^2)}_{g} \sin \underbrace{(20^\circ)}_{\theta} + \underbrace{(0.6)}_{\mu_e} \underbrace{(9.8 \; \text{m/s}^2)}_{g} \cos \underbrace{(20^\circ)}_{\theta}     = a_x,    \label{CarroMaleta_reemplazandoC}
+\end{equation}
+to get:
+\begin{equation}
+    a_x = 8.88 \; \text{m/s}^2.
+\end{equation}
                 ​</div>
       </div>
 
